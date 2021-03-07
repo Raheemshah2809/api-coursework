@@ -83,3 +83,4 @@ function displayFail(){
     document.querySelector('#formPage').style.paddingTop = "2vh";
     document.querySelector('#fail').style.display = "block";
 }
+

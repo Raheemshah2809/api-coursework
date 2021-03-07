@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: auto; 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+   scroll-behavior: smooth;
+
+}
+body {
+    margin: 0px;
+    padding: 10px;
+    background-color: #656666;
+}
+
+pageHeader{
+    background-color: RGB(172,43,38);
+    min-height: 13vh;
+    margin-bottom: 5vh;
+}
+
+headerTxt{
+    padding-top: 5vh;
+    color: #C0C0C0;
+}
+
+container {
+    width: 100%;
+    min-height: 580px;
+}
+
+/*=================
+For Mobile Phones
+=================*/
+
+/*=================
+Loading Page
+=================*/
+#loading {
+    display: none;
+}
+
+#loading #loadingImg {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+/*=================
+Success Page
+=================*/
+#success {
+    display: none;
+    width: 80%;
+    margin: auto;
+}
+.records{
+    border-radius: 25px;
+    border: 6px solid #000000;
+    padding: 15px 10px 15px 10px;
+    margin-bottom: 25px;
+    overflow: auto;
+}
+.features {
+    text-align: left;
+    line-height: 1.8;
+    color: white;
+}
+#image{
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+}
+searchAgain input, #searchAgain button{
+    margin-top: 15px;
+    display: block;
+    margin-bottom: 12px;
+    width: 80%;
+    line-height: 26px;
+    font-size: 1.2em;
+}
+searchAgain input {
+    border-radius: 2em;
+    min-height: 7vh;
+    border: 1px solid #d3d3d3;
+}
+#searchAgain input:focus{
+    border: 2px solid RGB(0,128,255);
+    outline: none;
+}
+#footer{
+    width: 100%;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    text-decoration: none;
+
+}
+/*=================
+Form Page
+=================*/
+
+#formPage{
+    display: block;
+    margin: auto;
+    padding-top: 20vh;
+}
+
+#searchForm label, #searchForm input, #searchForm button {
+    display: block;
+    margin-bottom: 12px;
+    width: 50%;
+    line-height: 26px;
+    font-size: 1.5em;
+}
+
+button {
+    margin-top: 50px;
+    border: none;
+    background-color: lightblue;
+    color: #6a5acd;
+    font-size: 1.2em;
+}
+button:active{
+    background-color: #595959;
+}
+button, #searchForm input {
+    border-radius: 2em;
+    min-height: 7vh;
+}
+#searchForm input {
+    border: 1px solid #d3d3d3;
+}
+#searchForm input:focus{
+    border: 2px solid RGB(0,128,255);
+    outline: none;
+}
+/*=================
+Fail Page
+=================*/
+#fail {
+    display: none;
+    margin: 20vh 0 auto;
+}
+#m404{
+    font-size: 6em;
+    overflow-wrap: break-word;
+}
+#failMsg {
+    max-width: 80%;
+    font-size: 1.65em;
+    overflow-wrap: break-word;
+}
+#toForm{
+    width: 80%;
+}
+/*=================
+For Tablets
+=================*/
+@media only screen and (min-width: 1000px){
+    #container {
+    width: 100%;
+        min-height: 920px;
+}
+    #searchForm {
+    width: 70%;
+    margin: auto;
+}
+    button, #searchForm input {
+    min-height: 7vh;
+}
+
+}
+/*=================
+For Tablets
+=================*/
+@media only screen and (min-width: 768px){
+        #searchForm {
+    width: 80%;
+    margin: auto;
+}
+    #headerTxt{
+        font-size: 1.5em;
+    }
+        #image{
+    float: right;
+    clear: both;
+}
+}
+
+
+.title1{
+    font-size: 50px;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    color: white;
+}
