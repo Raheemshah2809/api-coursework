@@ -31,13 +31,36 @@ container {
     min-height: 580px;
 }
 
-/*=================
-For Mobile Phones
-=================*/
 
-/*=================
-Loading Page
-=================*/
+@media only screen and (min-width: 1000px){
+    #container {
+    width: 100%;
+        min-height: 920px;
+}
+    #searchForm {
+    width: 70%;
+    margin: auto;
+}
+    button, #searchForm input {
+    min-height: 7vh;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+        #searchForm {
+    width: 80%;
+    margin: auto;
+}
+    #headerTxt{
+        font-size: 1.5em;
+    }
+        #image{
+    float: right;
+    clear: both;
+}
+}
+
 #loading {
     display: none;
 }
@@ -48,9 +71,7 @@ Loading Page
     position: absolute;
     transform: translate(-50%, -50%);
 }
-/*=================
-Success Page
-=================*/
+
 #success {
     display: none;
     width: 80%;
@@ -97,9 +118,6 @@ searchAgain input {
     text-decoration: none;
 
 }
-/*=================
-Form Page
-=================*/
 
 #formPage{
     display: block;
@@ -118,7 +136,7 @@ Form Page
 button {
     margin-top: 50px;
     border: none;
-    background-color: lightblue;
+    background-color: #e6e35c;
     color: #6a5acd;
     font-size: 1.2em;
 }
@@ -136,9 +154,7 @@ button, #searchForm input {
     border: 2px solid RGB(0,128,255);
     outline: none;
 }
-/*=================
-Fail Page
-=================*/
+
 #fail {
     display: none;
     margin: 20vh 0 auto;
@@ -155,39 +171,7 @@ Fail Page
 #toForm{
     width: 80%;
 }
-/*=================
-For Tablets
-=================*/
-@media only screen and (min-width: 1000px){
-    #container {
-    width: 100%;
-        min-height: 920px;
-}
-    #searchForm {
-    width: 70%;
-    margin: auto;
-}
-    button, #searchForm input {
-    min-height: 7vh;
-}
 
-}
-/*=================
-For Tablets
-=================*/
-@media only screen and (min-width: 768px){
-        #searchForm {
-    width: 80%;
-    margin: auto;
-}
-    #headerTxt{
-        font-size: 1.5em;
-    }
-        #image{
-    float: right;
-    clear: both;
-}
-}
 
 
 .title1{
