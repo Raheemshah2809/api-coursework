@@ -83,6 +83,7 @@ container {
     padding: 15px 10px 15px 10px;
     margin-bottom: 25px;
     overflow: auto;
+    background-color: brown;
 }
 .features {
     text-align: left;
