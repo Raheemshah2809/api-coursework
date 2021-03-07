@@ -78,8 +78,8 @@ searchAgain input, #searchAgain button{
     display: block;
     margin-bottom: 12px;
     width: 80%;
-    line-height: 26px;
-    font-size: 1.2em;
+    line-height: 25px;
+    font-size: 1em;
 }
 searchAgain input {
     border-radius: 2em;
