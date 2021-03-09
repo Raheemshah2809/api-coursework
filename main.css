@@ -4,9 +4,17 @@ html {
 	line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 body {
-	margin: 0;
+    margin: 0;
+    font-family: 'Roboto' ,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+	
+	background-color: black;
+	color: white;
+	font-size: 1.6rem;
+	padding: 2rem;
 }
 main {
 	display: block;
@@ -147,7 +155,7 @@ template {
 [hidden] {
 	display: none;
 }
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 *,
 *::before,
 *::after {
@@ -155,17 +163,7 @@ template {
 	padding: 0;
 	box-sizing: inherit;
 }
-html {
-	font-size: 62.5%;
-}
-body {
-	box-sizing: border-box;
-	
-	background-color: black;
-	color: white;
-	font-size: 1.6rem;
-	padding: 2rem;
-}
+
 #footer a {
 	text-decoration: none;
 	font-size: 2rem;
@@ -338,4 +336,12 @@ body {
 	.records {
 		align-items: center;
 	}
+}
+#generalSearch{
+    text-align: center;
+}
+.gs{
+    text-align: center;
+   
+    font-size: 25px;
 }
