@@ -159,7 +159,7 @@ html {
 }
 body {
 	box-sizing: border-box;
-	overflow-x: none;
+	
 	background-color: black;
 	color: white;
 	font-size: 1.6rem;
