@@ -19,19 +19,19 @@ function fetchAction(evt){
                   targetDiv.removeChild(targetDiv.firstChild);
                   }
             for (let i = 0; i<data.records.length; i++){
-                let section = document.createElement("section");
-                section.setAttribute("class", "records");
-                section.setAttribute("id", "record" + i);
-                targetDiv.appendChild(section);
-                let sectionID = section.getAttribute("id");
-                appendImg("#"+sectionID, data.records[i].fields.primary_image_id);
-                appendFeature("#"+sectionID ,"Object", data.records[i].fields.object);
-                appendFeature("#"+sectionID ,"Title", data.records[i].fields.title);
-                appendFeature("#"+sectionID ,"Place of origin", data.records[i].fields.place);
-                appendFeature("#"+sectionID ,"Date", data.records[i].fields.date_text);
-                appendFeature("#"+sectionID ,"Artist/Maker", data.records[i].fields.artist);
-                appendFeature("#"+sectionID ,"Museum number", data.records[i].fields.museum_number);
-                appendFeature("#"+sectionID ,"Gallery location", data.records[i].fields.location);
+                let card = document.createElement("div");
+                card.setAttribute("class", "records");
+                card.setAttribute("id", "record" + i);
+                targetDiv.appendChild(card);
+                let cardID = card.getAttribute("id");
+                appendImg("#"+cardID, data.records[i].fields.primary_image_id);
+                appendFeature("#"+cardID ,"Object", data.records[i].fields.object);
+                appendFeature("#"+cardID ,"Title", data.records[i].fields.title);
+                appendFeature("#"+cardID ,"Place of origin", data.records[i].fields.place);
+                appendFeature("#"+cardID ,"Date", data.records[i].fields.date_text);
+                appendFeature("#"+cardID ,"Artist/Maker", data.records[i].fields.artist);
+                appendFeature("#"+cardID ,"Museum number", data.records[i].fields.museum_number);
+                appendFeature("#"+cardID ,"Gallery location", data.records[i].fields.location);
                 displaySuccess();
             }
             let p = document.createElement("p");
@@ -63,7 +63,7 @@ function appendImg(recordId, imgId){
     //The second part of the URL is constructed from the first 6 characters of the image id.
     //The final part of the URL is the image id with a jpg extension - at its most simple...
     let href = imgCollecUrl + "/" + imgId.substr(0,6) +"/"+ imgId + "_jpg_l.jpg";
-    imgElem.setAttribute("id", "image");
+    imgElem.setAttribute("class", "image");
     imgElem.setAttribute("src", href);
     targetAppend.appendChild(imgElem);
 }
@@ -71,16 +71,16 @@ function appendImg(recordId, imgId){
 function displaySuccess(){
     document.querySelector('#loading').style.display = "none";
     document.querySelector('#fail').style.display = "none";
-    document.querySelector('#formPage').style.display = "block";
-    document.querySelector('#formPage').style.paddingTop = "2vh";
+    // document.querySelector('#formPage').style.display = "block";
+    // document.querySelector('#formPage').style.paddingTop = "2vh";
     document.querySelector('#success').style.display = "block";
 }
 
 function displayFail(){
     document.querySelector('#loading').style.display = "none";
         document.querySelector('#success').style.display = "none";
-    document.querySelector('#formPage').style.display = "block";
-    document.querySelector('#formPage').style.paddingTop = "2vh";
+    // document.querySelector('#formPage').style.display = "block";
+    // document.querySelector('#formPage').style.paddingTop = "2vh";
     document.querySelector('#fail').style.display = "block";
 }
 

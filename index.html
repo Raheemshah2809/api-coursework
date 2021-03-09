@@ -6,42 +6,52 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>V&amp;A Museum</title>
     <link rel="stylesheet" href="main.css" type="text/css">
-    <script src="index.js"></script>
+    <!-- Remove When Done -->
+    <!-- <link rel="stylesheet" href="style.min.css"> -->
 </head>
 <body>
     <a id="top"></a>
-    <header id="pageHeader">
-        <p class="title1">Search for objects in the V&amp;A(Victoria and Albert) Museum</p>
-        </header>
-    <div id="container">
-        <div id="formPage">
-            <form id="searchForm">  
-            <label for="generalSearch">Search items here</label>
-            <input type="text" id="generalSearch">
-            <button type="submit" id="submitForm" class="submitSearch">Search In Museum</button>
-            <button class="refresh"
-           <a href="index.html" >Refresh this page</a></button>
-            </form>
-        </div>
-        <div id="loading">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__content">
+            <!-- Title Area -->
+            <div class="header__text">
+                <h1 class="header__title">Search for objects in the
+                    <span class="main__text">
+                        V&amp;A (Victoria and Albert) Museum
+                    </span>
+                </h1>
+            </div>
+            <!-- Form -->
+            <div class="header__form">
+                <form class="form">
+                    <input type="text" id="generalSearch" placeholder="Search Items Here" class="form__search">
+                    <div class="form__buttons">
+                        <button type="submit" id="submitForm" class="btn">Search In Museum</button>
+                        <button class="btn" formaction="index.html">Refresh this page</button>
+                    </div>
 
+                </form>
+            </div>
         </div>
-        <div id="success">
+    </header>
+    <main class="main">
+        <div id="loading">
+        </div>
+        <div id="success" class="card-grid">
             <p id="footer"><a href="index.html">Refresh this page</a></p>
         </div>
         <div id="fail">
             <h1 id="m404" class="failMsg">404</h1>
             <p id="failMsg" class="failMsg">Sorry, we couldn't find information for what you are looking for!!</p>
         </div>
-    </div>
-    <p>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px"
-                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-                alt="Valid CSS!" />
-        </a>
-    </p>
-            
-    
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </p>
+    </main>
+    <script src="index.js"></script>
 </body>
-</html> 
+
+</html>
