@@ -73,7 +73,7 @@ function displaySuccess(){
     document.querySelector('#fail').style.display = "none";
     // document.querySelector('#formPage').style.display = "block";
     // document.querySelector('#formPage').style.paddingTop = "2vh";
-    document.querySelector('#success').style.display = "block";
+    document.querySelector('#success').style.display = "grid";
 }
 
 function displayFail(){
